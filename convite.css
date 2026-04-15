@@ -71,13 +71,13 @@ button {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 22%; /* desce o texto */
+  bottom: 20%; /* desce o texto */
 
   width: 70%;
   max-width: 260px;
 
   text-align: center;
-  font-size: 15px;
+  font-size: 13px;
   color: #dcce3c;
   line-height: 1.3;
 
