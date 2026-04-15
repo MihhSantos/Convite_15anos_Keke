@@ -80,7 +80,7 @@ button {
 
   text-align: center;
   font-size: clamp(10px, 3vw, 14px); /* 🔥 responsivo */
-  color: #dcce3c;
+  color: #fff;
 
   line-height: 1.3;
 
