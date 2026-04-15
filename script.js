@@ -1,31 +1,13 @@
-function getMusica() {
-  return document.getElementById('musicaFundo');
-}
-
-function salvarTempoMusica() {
-  const musica = getMusica();
-  if (musica && !musica.paused) {
-    sessionStorage.setItem('musicaTempo', String(musica.currentTime || 0));
-  }
-}
 
 function abrirConvite() {
-  const musica = getMusica();
-  sessionStorage.setItem('musicaAtiva', 'true');
+  const musica = document.getElementById("musicaFundo");
 
   if (musica) {
-    musica.currentTime = 0;
-    musica.play().catch(() => {});
-    sessionStorage.setItem('musicaTempo', '0');
+    musica.play().catch((erro) => {
+      console.log("Erro ao tocar música:", erro);
+    });
   }
 
-  setTimeout(() => {
-    salvarTempoMusica();
-    window.location.href = 'convite.html';
-  }, 150);
+  document.getElementById("telaInicial").style.display = "none";
+  document.getElementById("telaConvite").style.display = "block";
 }
-
-window.addEventListener('pagehide', salvarTempoMusica);
-window.addEventListener('visibilitychange', () => {
-  if (document.visibilityState === 'hidden') salvarTempoMusica();
-});
