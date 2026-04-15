@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  overflow: hidden;
+}
+
+/* CONTAINER */
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* IMAGEM SEM CORTAR */
+.fundo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* 🔥 chave pra mobile */
+}
+
+/* TEXTO ACIMA DOS BOTÕES */
+.info-confirmacao {
+  position: absolute;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  /* 🔥 ajuste fino */
+  bottom: 38%;
+
+  width: 60%;
+  max-width: 260px;
+
+  text-align: center;
+  font-size: 10px;
+  color: #dcce3c;
+
+  line-height: 1.3;
+
+  /*background: rgba(0,0,0,0.4);*/
+  padding: 6px 10px;
+  border-radius: 15px;
+}
+
+/* BOTÕES PRESOS NA IMAGEM */
+.botoes {
+  position: absolute;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  /* posição baseada na imagem */
+  bottom: 26%;
+
+  width: 45%;
+  max-width: 220px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* BOTÕES */
+button {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-radius: 25px;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  color: white;
+  background: linear-gradient(135deg, #d7a23a, #8f5a14);
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
