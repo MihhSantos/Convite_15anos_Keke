@@ -73,7 +73,7 @@ button {
   left: 50%;
   transform: translateX(-50%);
 
-  bottom: 20vh; /* 🔥 relativo à tela */
+  bottom: 26vh; /* 🔥 relativo à tela */
 
   width: 80%;
   max-width: 300px;
