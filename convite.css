@@ -24,18 +24,16 @@ body {
 .fundo {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* 🔥 chave pra mobile */
+  object-fit: contain; 
 }
 
-/* TEXTO ACIMA DOS BOTÕES */
 .info-confirmacao {
   position: absolute;
 
   left: 50%;
   transform: translateX(-50%);
 
-  /* 🔥 ajuste fino */
-  bottom: 38%;
+  bottom: 36%; 
 
   width: 60%;
   max-width: 260px;
@@ -46,7 +44,6 @@ body {
 
   line-height: 1.3;
 
-  /*background: rgba(0,0,0,0.4);*/
   padding: 6px 10px;
   border-radius: 15px;
 }
@@ -69,18 +66,40 @@ body {
   gap: 10px;
 }
 
-/* BOTÕES */
-button {
-  width: 100%;
-  padding: 7px;
-  border: none;
-  border-radius: 25px;
+/* BOTÕES LADO A LADO */
+.botoes {
+  position: absolute;
 
-  font-size: 9px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 26%;
+
+  width: 45%;
+  max-width: 220px;
+
+  display: flex;
+  flex-direction: row; 
+  justify-content: center; 
+  gap: 10px;
+}
+
+/* BOTÃO REDONDO */
+button {
+  width: 70px;
+  height: 70px;
+  padding: 0;
+  border: none;
+  border-radius: 50%; 
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 10px;
   font-weight: 600;
 
   color: white;
-  background: linear-gradient(135deg, #d7a23a, #8f5a14);
+  background: linear-gradient(135deg, #d7a23a, #8f5a14); 
 
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
