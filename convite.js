@@ -15,9 +15,7 @@ function abrirSugestao() {
 }
 
 function abrirMaps() {
-  const endereco = "Rua Prof. Saul Araken Rocco 265 - Condominio Faz Bandeirantes, Piratininga - SP, 17490-000";
-  const url = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(endereco)}`;
-
+  const url = "https://www.google.com/maps/dir/?api=1&destination=-22.3911725,-49.1486172";
   window.open(url, "_blank");
 }
 
